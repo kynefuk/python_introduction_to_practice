@@ -1,11 +1,12 @@
 def deco1(f):
     print('deco1 called')
 
-    # デコレート対象の関数fの前後でログ出力する
+    # デコレート対象の関数fの前後でログ出力している
     # 名前はwrapperじゃなくても良い
     def wrapper():
         print('before exec')
-        f() #元の関数を実行
+        # 元の関数を実行
+        f()
         print('after exec')
 
     # deco1はwrapper()を元の関数に返すので

@@ -1,6 +1,6 @@
 def deco2(f):
     # デコレートする関数の引数を受け取るために
-    # まずデコレータ関数が引数を受け取る
+    # wrapper関数が引数を受け取れるようにする
     def wrapper(*args, **kwargs):
         print('before exec')
         # 引数を渡して元の関数を実行
