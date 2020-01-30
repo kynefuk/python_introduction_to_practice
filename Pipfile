@@ -8,6 +8,9 @@ autopep8 = "*"
 flake8 = "*"
 
 [packages]
+click = "*"
+pillow = "*"
+requests = "*"
 
 [requires]
 python_version = "3.8"

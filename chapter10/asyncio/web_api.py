@@ -7,6 +7,7 @@ async def call_web_api(url):
     print(f'send a request: {url}')
 
     # awaitでこの処理が終わるまでコルーチンを中断する
+    # I/O処理による待ちで処理が中断される
     await asyncio.sleep(random.random())
 
     print(f'got a response: {url}')
@@ -37,6 +38,8 @@ async def main():
 
 
 if __name__ == '__main__':
+    # asyncio.run()で新しいイベントループが作成され
+    # このイベントループがコルーチンの実行を制御する
     result = asyncio.run(main())
 
     # twitter, facebook, instagramの順を保持してくれる
