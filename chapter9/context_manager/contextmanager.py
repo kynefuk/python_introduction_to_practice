@@ -6,11 +6,13 @@ def point(**kwargs):
 
     try:
         # yield式より上に前処理を書く
+        print(f'前処理です')
 
-        # valueがasキーワードに渡される
+        # yieldで返される値がasキーワードに入る
         yield value
 
         # yield式より下に後処理を書く
+        print(f'後処理です')
     except Exception as e:
         print(e)
         raise

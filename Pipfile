@@ -4,13 +4,22 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-autopep8 = "*"
-flake8 = "*"
+black = "*"
 
 [packages]
-click = "*"
-pillow = "*"
-requests = "*"
+certifi = "==2019.11.28"
+chardet = "==3.0.4"
+click = "==7.0"
+idna = "==2.8"
+requests = "==2.22.0"
+urllib3 = "==1.25.8"
+Pillow = "==7.0.0"
+flake8 = "*"
+flake8-docstrings = "*"
+flake8-import-order = "*"
 
 [requires]
 python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true

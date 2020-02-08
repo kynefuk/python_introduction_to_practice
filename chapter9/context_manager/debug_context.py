@@ -6,6 +6,7 @@ logger.addHandler(logging.StreamHandler())
 
 logger.setLevel(logging.INFO)
 
+# ログレベル一時変更と戻す処理を行う
 @contextmanager
 def debug_context():
     level = logger.level
@@ -30,6 +31,7 @@ def main():
 
     logger.info('after: info log')
     logger.debug('after: debug log')
+
 
 if __name__ == '__main__':
     main()

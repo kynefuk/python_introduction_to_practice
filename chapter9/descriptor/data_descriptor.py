@@ -5,7 +5,7 @@ class TextField:
         print(f'{owner=}, {name=}')
         self.name = name
 
-    #setter
+    # setter
     def __set__(self, instance, value):
         print('__set__ was called')
         if not isinstance(value, str):
